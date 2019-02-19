@@ -1,0 +1,26 @@
+<h2><i class="fa fa-pencil"></i> Connectez vous </h2>
+
+<?php if ($error == true ) {?>
+<div class="popup">
+    <p> <?= $message ?></p>
+</div>
+<?php } ?>
+<fieldset>
+	<form action="login.php" method="post">
+		<ul>
+		    <li>
+		    <label for="mail">Adresse mail:</label>
+		    <input type="text" placeholder="mail" name='mail'>
+		    </li>
+		    <li>
+		    <label for="password">Mot de Pass:</label>
+		    <input type="text" placeholder="password" name='password'>
+		    </li>
+		    <li>
+		    <button type="submit" name="submit" >Entrer</button>
+		    </li>
+
+		</ul>
+	</form>
+</fieldset>
+

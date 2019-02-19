@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript - Exemple</title>
+</head>
+<body>
+    <h1>Hello JS !</h1>
+    <!-- Ajout d'un attribut HTML src pour charger un fichier JavaScript externe -->
+    <script src="exercice1.js"></script>
+</body>
+</html>
+
+<!---- exemple2.js ---->
+
+<script>
+'use strict'; 
+
+const TAUX_DE_TVA = 20.0;
+
+var montantHT;
+var montantTTC;
+var montantTVA;
+
+montantHT = window.prompt('Quel est le montant HT ?');
+montantHT = parseFloat(montantHT);
+montantTTC = montantHT + montantTVA;
+
+document.write('<p>Pour un montant HT de ' + montantHT + ' € il y a ' + montantTVA + ' € de TVA.</p>');
+document.write('<p>Le montant TTC est donc de ' + montantTTC + ' €.</p>');
+
+
+
+</script>

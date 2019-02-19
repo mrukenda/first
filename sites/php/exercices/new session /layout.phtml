@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Session</title>
+
+    <!-- Feuilles de style externes -->
+    <link rel="stylesheet" href="css/normalize-3.0.3.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+
+    <!-- Feuilles de style de l'application -->
+    <link rel="stylesheet" href="css/blog-theme.css">
+   
+</head>
+<body>
+<nav>
+
+    <a href="index.php">Index</a>
+    <?php if (array_key_exists( 'firstName', $_SESSION ) == false) {?>
+        <a href="register.php">register</a>
+        <a href="login.php">login</a>
+    <?php } else {?>
+        <a href="deco.php">deconnexion</a>
+        <a href="info.php">info</a>
+    <?php } ?>
+</nav>
+
+
+<?php include $template.'.phtml';?>
+
+
+<div>
+    <p>ceci est un footer</p>
+</div>
+
+
+</body>
+</html>
+

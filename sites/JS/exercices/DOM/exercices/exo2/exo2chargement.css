@@ -1,0 +1,18 @@
+#chargebar {
+	width: 500px;
+    height: 200px;
+    border-radius: 0.5em;
+    background: #940533;
+    position: relative;
+}
+ #percentage {
+ 	width:250px;
+ 	height: 100px;
+    position: relative;
+    font-size: 1em;
+    background: tomato;
+    border-radius: 0.5em;
+}
+p{
+	margin:0;
+}

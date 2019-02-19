@@ -1,0 +1,30 @@
+<h2><i class="fa fa-lock"></i> Se connecter avec un compte utilisateur</h2>
+
+<form class="generic-form" action="<?= $requestUrl ?>/user/login" method="POST">
+
+
+	<fieldset>
+		<legend><i class="fa fa-book"></i> Informations d'authentification </legend>
+		<ul>
+			<li>
+				<label for="Email">Email:</label>
+				<input id="Email" type="text" name="Email" data-required data-name="Email" value="">
+			
+			</li>
+			<li>
+				<label for="Password">Mot de passe :</label>
+				<input id="Password" type="text" name="Password" data-required data-name="Password" value="">
+			</li>
+			
+		</ul>
+	</fieldset>
+
+
+
+	<ul>
+		<li>
+			<input class="button button-primary" type="submit" value="Connexion">
+			<a class="button button-cancel small" href="<?= $requestUrl ?>">Annuler</a>
+		</li>
+	</ul>
+</form>

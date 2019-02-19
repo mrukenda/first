@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>PDO</title>
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+	<main>
+        <h1>Bons de commande</h1>
+        <a href="pdo.php">Retourner à l'accueil></a>
+        <h1><?=$customer['customerName']?></h1>
+        <h2><?=$customer['contactFirstName']?> <?=$customer['contactLastName']?></h2>
+        <p><?=$customer['addressLine1']?></p>
+        <p><?=$customer['city']?></p>
+            <table>
+                <caption>Bons de commande</caption>
+            <thead>
+                <tr>
+                    <th>Produit</th>
+                    <th>Prix Unitaire</th>
+                    <th>Quantité</th>
+                    <th>Prix Total</th>
+                   
+             </tbody>
+        </table>
+    </main>
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>PDO</title>
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+	<main>
+        <h1>Bon de commande</h1>
+        <table>
+        <caption>liste de commande</caption>
+        <thead>
+        <tr>
+        <th>commande</th>
+        <th>date de commande</th>
+        <th>date de livraison</th>
+        <th>statut</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <?php foreach($orders as $order) :?>
+        <tr>
+	        <td><a href="order_form.php?orderNumber=<?= $order['orderNumber'] ?>"> <?= $order['orderNumber'] ?></a> </td>
+	        <td> <?= $order['orderDate'] ?> </td>
+	        <td> <?= $order['shippedDate'] ?> </td>
+	        <td> <?= $order['status'] ?> </td>
+        </tr>
+        <?php endforeach  ?>
+        </tbody>
+        </table>
+
+        
+    </main>
+
+
+</body>
+</html>
+
+

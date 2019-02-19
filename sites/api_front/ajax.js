@@ -1,0 +1,1 @@
+$jSon =$.getJSON('https://10.10.109.09/api_back/employees.php')
